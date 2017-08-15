@@ -2,8 +2,8 @@
 
 We can reduce the chance of NullPointerException’s in Java using best practices –
 
-*Don’t return null’s from methods
-*Don’t pass null’s as arguments
+1. Don’t return null’s from methods
+2. Don’t pass null’s as arguments
 
 You can also use java.lang.Optional. Java8 Optional formalises the approach used in other languages, and already existed in some Java libraries. Optional is simply an object wrapper.
 
