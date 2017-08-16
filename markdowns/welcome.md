@@ -157,7 +157,3 @@ class Wheels {
 class NoBikeException extends Exception {
 	private static final long serialVersionUID = 1L;
 }```
-
-
-[`techio.yml`](https://github.com/TechDotIO/techio-basic-template/blob/master/techio.yml)  
-This *mandatory* file describes both the table of content and the programming project(s). The file path should not be changed.
