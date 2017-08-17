@@ -86,6 +86,7 @@ public class Main {
         }
     }
 }
+
 // { autofold
 class Bike {
     private Optional<Wheels> wheels;
