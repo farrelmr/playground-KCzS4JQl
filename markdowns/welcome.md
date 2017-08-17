@@ -9,6 +9,63 @@ You can also use [java.lang.Optional](https://docs.oracle.com/javase/8/docs/api/
 
 # Examples
 
+```java runnable
+// { autofold
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAdjuster;
+import java.time.temporal.TemporalAdjusters;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Main {
+
+public static void main(String[] args) {
+
+// }
+    LocalDate currentLocalDate = LocalDate.now();
+    System.out.println("currentLocalDate - yyyy-MM-dd - " + currentLocalDate);
+
+    // Month now not based on 0, and year not based on 1900
+    LocalDate twentySevenFeb2017LocalDate = LocalDate.of(2017, 2, 27);
+    System.out.println("twentySevenFeb2017LocalDate - yyyy-MM-dd - " + twentySevenFeb2017LocalDate);
+
+    twentySevenFeb2017LocalDate = twentySevenFeb2017LocalDate.withYear(2017).withMonth(12).withDayOfMonth(25);
+    System.out.println("twentySevenFeb2017LocalDate - with -  " + twentySevenFeb2017LocalDate);
+
+    LocalDate parseTwentySevenFeb2017LocalDate = LocalDate.parse("2017-02-27", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    System.out.println("parseTwentySevenFeb2017LocalDate - pattern - yyyy-MM-dd - " + parseTwentySevenFeb2017LocalDate);
+    
+    // increment using plus, decrement using minus
+    twentySevenFeb2017LocalDate = twentySevenFeb2017LocalDate.plusDays(1);
+    System.out.println("twentySevenFeb2017LocalDate - immutable - " + twentySevenFeb2017LocalDate);
+    
+    // Time with no date
+    LocalTime currentLocalTime = LocalTime.now();
+    System.out.println("currentLocalTime - yyyy-MM-dd - " + currentLocalTime);
+    
+    LocalTime parseLocalTime = LocalTime.parse("13:44");
+    System.out.println("parseLocalTime - " + parseLocalTime);
+
+    parseLocalTime = LocalTime.parse("13:44:25");
+    System.out.println("parseLocalTime - immutable - " + parseLocalTime);
+//{ autofold
+}
+
+}
+//}
+```
+
+
 My approach is similar style to my post [Java8 – Streams Cookbook](https://www.javabullets.com/java-8-streams-cookbook/) and have included a class with a number of examples using Optional
 
 ```java
