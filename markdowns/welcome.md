@@ -42,7 +42,7 @@ class NoBikeException extends Exception {
 
 ```java runnable
 import java.util.Optional;
-public class OptionalExamples {
+public class Main {
     // Populate Bike with Optional<Wheels>
     private static Bike colnagoBike = new Bike(Optional.of(new Wheels("mavic", 32)), "colnago");
     
