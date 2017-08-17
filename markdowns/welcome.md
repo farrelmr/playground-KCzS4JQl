@@ -2,10 +2,10 @@
 
 We can reduce the chance of NullPointerException’s in Java using best practices –
 
-1. Don’t return null’s from methods
-2. Don’t pass null’s as arguments
+* Don’t return null’s from methods
+* Don’t pass null’s as arguments
 
-You can also use java.lang.Optional. Java8 Optional formalises the approach used in other languages, and already existed in some Java libraries. Optional is simply an object wrapper.
+You can also use [java.lang.Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html). Java8 Optional formalises the approach used in other languages, and already existed in some Java libraries. Optional is simply an object wrapper.
 
 # Examples
 
@@ -159,5 +159,4 @@ class NoBikeException extends Exception {
 }```
 
 
-[`techio.yml`](https://github.com/TechDotIO/techio-basic-template/blob/master/techio.yml)  
-This *mandatory* file describes both the table of content and the programming project(s). The file path should not be changed.
+If you have liked this post, check out my personal blog which contains similar tutorials at [www.javabullets.com](https://www.javabullets.com)
