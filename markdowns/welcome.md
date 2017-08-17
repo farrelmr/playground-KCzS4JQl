@@ -22,24 +22,6 @@ class Bike {
         this.wheels = wheels;
         this.brand = brand;
     }
-    
-// { autofold
-    public Optional<Wheels> getWheels() {
-        return wheels;
-    }
-    
-    public void setWheels(Optional<Wheels> wheels) {
-        this.wheels = wheels;
-    }
-    
-    public String getBrand() {
-        return brand;
-    }
-    
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-// }
 }
 
 class Wheels {
@@ -50,24 +32,6 @@ class Wheels {
         this.brand = brand;
         this.spokes = spokes;
     }
-    
-// { autofold    
-    public String getBrand() {
-        return brand;
-    }
-    
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-    
-    public int getSpokes() {
-        return spokes;
-    }
-    
-    public void setSpokes(int spokes) {
-        this.spokes = spokes;
-    }
-// }
 }
 class NoBikeException extends Exception {
 	private static final long serialVersionUID = 1L;
