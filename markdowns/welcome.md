@@ -40,6 +40,10 @@ class NoBikeException extends Exception {
 
 # Empty Optionals
 
+* Empty optional using Optional.empty()
+* NoSuchElementException 
+* ifPresent, orElse, ifPresent, orElseThrow method
+
 ```java runnable
 import java.util.Optional;
 public class Main {
@@ -148,6 +152,9 @@ class NoBikeException extends Exception {
 
 # Null Objects In Optionals
 
+* of - Populate with null object - Throws Exception
+* ofNullable - allows null
+
 ```java runnable
 import java.util.Optional;
 public class Main {
@@ -233,6 +240,9 @@ class NoBikeException extends Exception {
 ```
 
 # Values In Optionals
+
+* Filtering and mapping in combination with Lambdas
+* flatMap to prevent Optional<Optional<Wheels>>
 
 ```java runnable
 import java.util.Optional;
