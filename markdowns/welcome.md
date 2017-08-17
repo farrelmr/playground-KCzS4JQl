@@ -9,8 +9,6 @@ You can also use [java.lang.Optional](https://docs.oracle.com/javase/8/docs/api/
 
 # Examples
 
-
-
 My approach is similar style to my post [Java8 – Streams Cookbook](https://www.javabullets.com/java-8-streams-cookbook/) and have included a class with a number of examples using Optional
 
 Here is our base model, without getters and setters - 
@@ -25,7 +23,7 @@ class Bike {
         this.brand = brand;
     }
     
-    // { autofold
+// { autofold
     public Optional<Wheels> getWheels() {
         return wheels;
     }
@@ -41,7 +39,7 @@ class Bike {
     public void setBrand(String brand) {
         this.brand = brand;
     }
-    // }
+// }
 }
 
 class Wheels {
@@ -53,7 +51,7 @@ class Wheels {
         this.spokes = spokes;
     }
     
-    // { autofold    
+// { autofold    
     public String getBrand() {
         return brand;
     }
@@ -69,7 +67,7 @@ class Wheels {
     public void setSpokes(int spokes) {
         this.spokes = spokes;
     }
-    // }
+// }
 }
 class NoBikeException extends Exception {
 	private static final long serialVersionUID = 1L;
